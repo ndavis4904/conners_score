@@ -7,7 +7,7 @@ use-site-title: true
 
 # Table of Contents
 
-#### [Teacher Form](https://github.com/ndavis4904/conners_score/blob/main/Pages/Teacher_Input.Rmd)
+#### [Teacher Form](https://github.com/ndavis4904/conners_score/blob/main/Pages/Teacher_Input.md)
 #### [Part I: Neighborhood Change](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/part-1a)
 
 ##### &ensp; &ensp; [a. Metrics and Data Sources](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/part-1a)
