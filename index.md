@@ -8,6 +8,9 @@ use-site-title: true
 # Table of Contents
 
 #### [Teacher Form](https://nicholas4904.shinyapps.io/Conners3_Teacher_Input/)
+#### [Parent Form](https://nicholas4904.shinyapps.io/Parent_Input/)
+#### [Self Report Form](https://nicholas4904.shinyapps.io/SelfReport_Input/)
+
 #### [Part I: Neighborhood Change](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/part-1a)
 
 ##### &ensp; &ensp; [a. Metrics and Data Sources](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/part-1a)
