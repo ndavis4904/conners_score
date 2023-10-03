@@ -482,6 +482,7 @@ server <- function(input, output) {
     ))), "</b>", "% chance of diagnosis of ADHD."))
     
     #Calculating t-scores based on norm data
+    #Formula is 50 + (10*(Raw Score - Mean)/SD)
     
     #inattention
     output$IN <- renderPrint(cat(round(50 + 10 * ((sum(input$Q3, input$Q37, input$Q41, input$Q44, input$Q60,
