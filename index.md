@@ -7,17 +7,18 @@ use-site-title: true
 
 # Table of Contents
 
-#### [Teacher Form](https://nicholas4904.shinyapps.io/Conners3_Teacher_Input/){:target="_blank" rel="noopener"}
-#### [Parent Form](https://nicholas4904.shinyapps.io/Parent_Input/)
-#### [Self Report Form](https://nicholas4904.shinyapps.io/SelfReport_Input/)
+#### Test Description
 
-#### [Part I: Neighborhood Change](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/part-1a)
+#### Scale Descriptions
 
-##### &ensp; &ensp; [a. Metrics and Data Sources](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/part-1a)
-##### &ensp; &ensp; [b. Descriptive Analysis of Neighborhood Change (1990-2000)](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/part-1b)
-##### &ensp; &ensp; [c. Predicting Neighborhood Change Based on 2000 Neighborhood characteristics](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/part-1c)
-  
-#### [Part II: Evaluation of Tax Credits](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/part-2)
-#### [Part III: Results and Conclusion](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/Conclusion)
-#### [References](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/References)
-#### [About Us](https://watts-college.github.io/project-cpp-528-2023s-team-04/pages/About_Us)
+##### &ensp; &ensp; Teacher Scales
+##### &ensp; &ensp; Parent Scales
+##### &ensp; &ensp; Self-Report Scales
+
+#### Scoring Forms
+
+##### &ensp; &ensp; [Teacher Form](https://nicholas4904.shinyapps.io/Conners3_Teacher_Input/){:target="_blank" rel="noopener"}
+##### &ensp; &ensp; [Parent Form](https://nicholas4904.shinyapps.io/Parent_Input/)
+##### &ensp; &ensp; [Self-Report Form](https://nicholas4904.shinyapps.io/SelfReport_Input/)
+
+
