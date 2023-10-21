@@ -12,8 +12,8 @@ use-site-title: true
 ### Scale Descriptions
 
 ##### &ensp; &ensp; [Teacher Scales](https://github.com/ndavis4904/conners_score/blob/main/Pages/Scales_Teacher)
-##### &ensp; &ensp; Parent Scales
-##### &ensp; &ensp; Self-Report Scales
+##### &ensp; &ensp; [Parent Scales](https://github.com/ndavis4904/conners_score/blob/main/Pages/Scales_Parent)
+##### &ensp; &ensp; [Self-Report Scales](https://github.com/ndavis4904/conners_score/blob/main/Pages/Scales_SelfReport)
 
 ### Scoring Forms
 
