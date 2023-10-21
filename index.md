@@ -7,7 +7,7 @@ use-site-title: true
 
 # Table of Contents
 
-#### [Teacher Form](https://nicholas4904.shinyapps.io/Conners3_Teacher_Input/)
+#### [Teacher Form](https://nicholas4904.shinyapps.io/Conners3_Teacher_Input/){:target="_blank" rel="noopener"}
 #### [Parent Form](https://nicholas4904.shinyapps.io/Parent_Input/)
 #### [Self Report Form](https://nicholas4904.shinyapps.io/SelfReport_Input/)
 
