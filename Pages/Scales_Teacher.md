@@ -48,4 +48,4 @@ layout: default
 
 ### DSM-5 Oppositional Defiant Disorder
 
-# [Home](https://github.com/ndavis4904/conners_score/blob/main/index.md)
+# [Home](https://ndavis4904.github.io/conners_score/index.md)
