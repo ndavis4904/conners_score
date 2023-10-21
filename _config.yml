@@ -3,3 +3,6 @@ description: Electronic scoring of the Conners 3
 show_downloads: 
 google_analytics:
 theme: jekyll-theme-slate
+
+kramdown:
+  input: Kramdown
