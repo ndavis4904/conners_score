@@ -7,13 +7,13 @@ use-site-title: true
 
 # Table of Contents
 
-### [Test Description Updated](https://ndavis4904.github.io/conners_score/Pages/Test_Description)
+### [Test Description](https://ndavis4904.github.io/conners_score/Pages/Test_Description)
 
 ### Scale Descriptions
 
-##### &ensp; &ensp; [Teacher Scales](https://github.com/ndavis4904/conners_score/blob/main/Pages/Scales_Teacher)
-##### &ensp; &ensp; [Parent Scales](https://github.com/ndavis4904/conners_score/blob/main/Pages/Scales_Parent)
-##### &ensp; &ensp; [Self-Report Scales](https://github.com/ndavis4904/conners_score/blob/main/Pages/Scales_SelfReport)
+##### &ensp; &ensp; [Teacher Scales](https://ndavis4904.github.io/conners_score/Scales_Teacher)
+##### &ensp; &ensp; [Parent Scales](https://ndavis4904.github.io/conners_score/Pages/Scales_Parent)
+##### &ensp; &ensp; [Self-Report Scales](https://ndavis4904.github.io/conners_score/Pages/Scales_SelfReport)
 
 ### Scoring Forms
 
