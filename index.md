@@ -7,15 +7,15 @@ use-site-title: true
 
 # Table of Contents
 
-#### Test Description
+### Test Description
 
-#### Scale Descriptions
+### Scale Descriptions
 
 ##### &ensp; &ensp; Teacher Scales
 ##### &ensp; &ensp; Parent Scales
 ##### &ensp; &ensp; Self-Report Scales
 
-#### Scoring Forms
+### Scoring Forms
 
 ##### &ensp; &ensp; [Teacher Form](https://nicholas4904.shinyapps.io/Conners3_Teacher_Input/){:target="_blank" rel="noopener"}
 ##### &ensp; &ensp; [Parent Form](https://nicholas4904.shinyapps.io/Parent_Input/)
