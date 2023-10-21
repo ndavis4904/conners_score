@@ -7,7 +7,7 @@ use-site-title: true
 
 # Table of Contents
 
-### [Test Description](https://ndavis4904.github.io/conners_score/Pages/Test_Description)
+### [Test Description Updated](https://ndavis4904.github.io/conners_score/Pages/Test_Description)
 
 ### Scale Descriptions
 
