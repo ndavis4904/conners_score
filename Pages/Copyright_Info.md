@@ -8,4 +8,6 @@ Information for this scoring software was taken from the Conners 3 manual. It is
 booklets that are currently distributed by Multi-Health Systems Inc. The scoring forms were intentionally left without the prompting questions so as to make it impossible to use this
 software witout the response booklets to accompany them.
 
+Conners, C.K. (2008). *Conners  3rd Edition: Manual*. Multi-Health Systems, Inc.
+
 ### [Home](https://ndavis4904.github.io/conners_score/)
