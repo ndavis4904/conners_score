@@ -7,7 +7,7 @@ use-site-title: true
 
 # Table of Contents
 
-### [Copyright Statement](https://ndavis4904.github.io/conners_score/Pages/Copyright_Info.md)
+### [Copyright Statement](https://ndavis4904.github.io/conners_score/Pages/Copyright_Info)
 
 ### [Test Description](https://ndavis4904.github.io/conners_score/Pages/Test_Description)
 
