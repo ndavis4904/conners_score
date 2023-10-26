@@ -38,17 +38,18 @@ May be experiencing some degree of psychological difficulty, whether it is being
 
 ### DSM-5 ADHD Inattentive
 
-
+Provides a developmentally sensitive comparison of the child's level of inattention with his or her peers, as compared to the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5).
 
 ### DSM-5 ADHD Hyperactive-Impulsive
 
-
+Provides a developmentally sensitive comparison of the child's level of hyperactivity and impulsivity with his or her peers, as compared to the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5).
 
 ### DSM-5 Conduct Disorder
 
-
+Provides a developmentally sensitive comparison of the child's level of conduct disorder with his or her peers, as compared to the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5). This includes questions related to the child's verbal or physical aggression towards others, or tendency to participate in misconduct to possessions.
 
 ### DSM-5 Oppositional Defiant Disorder
 
+Provides a developmentally sensitive comparison of the child's level of oppositional defiant disorder with his or her peers, as compared to the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5). This includes questions related to the child's tendency to refuse instructions or direction from adults, or their tendency to overreact to given situations.
 
 ## [Home](https://ndavis4904.github.io/conners_score/)
