@@ -42,7 +42,7 @@ prob_function <- function(score) {
 ui <- fluidPage(
     
     # Application title
-    titlePanel("parent Form"),
+    titlePanel("Parent Form"),
     
     # Sidebar with a demographc input of the examinee 
     sidebarLayout(
