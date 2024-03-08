@@ -378,7 +378,7 @@ server <- function(input, output) {
     #Oppositional Defiant Disorder
     output$symp_od <- renderText(paste0("Symptom criteria probably met if ", "<b>", sum(c(
         ifelse(input$Q62 > 0,TRUE,FALSE),
-        ifelse(input$Q56 > 1,TRUE,FALSE),
+        ifelse(input$Q56 > 0,TRUE,FALSE),
         ifelse(input$Q38 > 0,TRUE,FALSE),
         ifelse(input$Q47 > 1,TRUE,FALSE),
         ifelse(input$Q71 > 0,TRUE,FALSE),
