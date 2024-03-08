@@ -288,13 +288,13 @@ server <- function(input, output) {
     
     #Calculating positive response style
     output$PI_1 <- renderText(paste0("Total Positive Impressions is ", sum(ifelse(input$Q31 == 0, 1, 0),
-                                                                           ifelse(input$Q23 == 3, 1, 0),
+                                                                           ifelse(input$Q33 == 3, 1, 0),
                                                                            ifelse(input$Q38 == 0, 1, 0),
                                                                            ifelse(input$Q74 == 3, 1, 0),
                                                                            ifelse(input$Q80 == 3, 1, 0),
                                                                            ifelse(input$Q105 == 3, 1, 0)), "."))
     output$PI_2 <- renderText(paste0("If ", "<b>", sum(ifelse(input$Q31 == 0, 1, 0),
-                                                       ifelse(input$Q23 == 3, 1, 0),
+                                                       ifelse(input$Q33 == 3, 1, 0),
                                                        ifelse(input$Q38 == 0, 1, 0),
                                                        ifelse(input$Q74 == 3, 1, 0),
                                                        ifelse(input$Q80 == 3, 1, 0),
