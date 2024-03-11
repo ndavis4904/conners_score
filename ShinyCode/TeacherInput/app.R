@@ -47,7 +47,7 @@ ui <- fluidPage(
     # Sidebar with a demographc input of the examinee 
     sidebarLayout(
         sidebarPanel(
-            dateInput("dob", label = "Student's Date of Birth", format = "m/d/yyyy"),
+            dateInput("dob", label = "Student's Date of Birth", format = "m/d/yyyy", value = "7/21/2012"),
             
             dateInput("doe", label = "Date of Evaluation", format = "m/d/yyyy"),
             
@@ -63,118 +63,118 @@ ui <- fluidPage(
             tabsetPanel(
                 tabPanel("Input",
             inputPanel(
-                numericInput("Q1", label = "Question 1", value = 0),
-                numericInput("Q2", label = "Question 2", value = 0),
-                numericInput("Q3", label = "Question 3", value = 0),
-                numericInput("Q4", label = "Question 4", value = 0),
-                numericInput("Q5", label = "Question 5", value = 0),
-                numericInput("Q6", label = "Question 6", value = 0),
-                numericInput("Q7", label = "Question 7", value = 0),
+                numericInput("Q1", label = "Question 1", value = 2),
+                numericInput("Q2", label = "Question 2", value = 1),
+                numericInput("Q3", label = "Question 3", value = 3),
+                numericInput("Q4", label = "Question 4", value = 3),
+                numericInput("Q5", label = "Question 5", value = 1),
+                numericInput("Q6", label = "Question 6", value = 3),
+                numericInput("Q7", label = "Question 7", value = 1),
                 numericInput("Q8", label = "Question 8", value = 0),
                 numericInput("Q9", label = "Question 9", value = 0),
                 numericInput("Q10", label = "Question 10", value = 0),
-                numericInput("Q11", label = "Question 11", value = 0),
-                numericInput("Q12", label = "Question 12", value = 0),
-                numericInput("Q13", label = "Question 13", value = 0),
+                numericInput("Q11", label = "Question 11", value = 3),
+                numericInput("Q12", label = "Question 12", value = 2),
+                numericInput("Q13", label = "Question 13", value = 3),
                 numericInput("Q14", label = "Question 14", value = 0),
                 numericInput("Q15", label = "Question 15", value = 0),
-                numericInput("Q16", label = "Question 16", value = 0),
-                numericInput("Q17", label = "Question 17", value = 0),
-                numericInput("Q18", label = "Question 18", value = 0),
+                numericInput("Q16", label = "Question 16", value = 2),
+                numericInput("Q17", label = "Question 17", value = 1),
+                numericInput("Q18", label = "Question 18", value = 3),
                 numericInput("Q19", label = "Question 19", value = 0),
-                numericInput("Q20", label = "Question 20", value = 0),
+                numericInput("Q20", label = "Question 20", value = 3),
                 numericInput("Q21", label = "Question 21", value = 0),
                 numericInput("Q22", label = "Question 22", value = 0),
-                numericInput("Q23", label = "Question 23", value = 0),
+                numericInput("Q23", label = "Question 23", value = 3),
                 numericInput("Q24", label = "Question 24", value = 0),
-                numericInput("Q25", label = "Question 25", value = 0),
-                numericInput("Q26", label = "Question 26", value = 0),
+                numericInput("Q25", label = "Question 25", value = 2),
+                numericInput("Q26", label = "Question 26", value = 3),
                 numericInput("Q27", label = "Question 27", value = 0),
                 numericInput("Q28", label = "Question 28", value = 0),
                 numericInput("Q29", label = "Question 29", value = 0),
-                numericInput("Q30", label = "Question 30", value = 0),
+                numericInput("Q30", label = "Question 30", value = 3),
                 numericInput("Q31", label = "Question 31", value = 0),
-                numericInput("Q32", label = "Question 32", value = 0),
+                numericInput("Q32", label = "Question 32", value = 2),
                 numericInput("Q33", label = "Question 33", value = 0),
                 numericInput("Q34", label = "Question 34", value = 0),
                 numericInput("Q35", label = "Question 35", value = 0),
-                numericInput("Q36", label = "Question 36", value = 0),
-                numericInput("Q37", label = "Question 37", value = 0),
+                numericInput("Q36", label = "Question 36", value = 3),
+                numericInput("Q37", label = "Question 37", value = 2),
                 numericInput("Q38", label = "Question 38", value = 0),
                 numericInput("Q39", label = "Question 39", value = 0),
                 numericInput("Q40", label = "Question 40", value = 0),
-                numericInput("Q41", label = "Question 41", value = 0),
+                numericInput("Q41", label = "Question 41", value = 1),
                 numericInput("Q42", label = "Question 42", value = 0),
                 numericInput("Q43", label = "Question 43", value = 0),
-                numericInput("Q44", label = "Question 44", value = 0),
+                numericInput("Q44", label = "Question 44", value = 3),
                 numericInput("Q45", label = "Question 45", value = 0),
                 numericInput("Q46", label = "Question 46", value = 0),
                 numericInput("Q47", label = "Question 47", value = 0),
                 numericInput("Q48", label = "Question 48", value = 0),
                 numericInput("Q49", label = "Question 49", value = 0),
-                numericInput("Q50", label = "Question 50", value = 0),
+                numericInput("Q50", label = "Question 50", value = 1),
                 numericInput("Q51", label = "Question 51", value = 0),
-                numericInput("Q52", label = "Question 52", value = 0),
+                numericInput("Q52", label = "Question 52", value = 2),
                 numericInput("Q53", label = "Question 53", value = 0),
                 numericInput("Q54", label = "Question 54", value = 0),
                 numericInput("Q55", label = "Question 55", value = 0),
                 numericInput("Q56", label = "Question 56", value = 0),
-                numericInput("Q57", label = "Question 57", value = 0),
+                numericInput("Q57", label = "Question 57", value = 2),
                 numericInput("Q58", label = "Question 58", value = 0),
                 numericInput("Q59", label = "Question 59", value = 0),
                 numericInput("Q60", label = "Question 60", value = 0),
                 numericInput("Q61", label = "Question 61", value = 0),
                 numericInput("Q62", label = "Question 62", value = 0),
-                numericInput("Q63", label = "Question 63", value = 0),
+                numericInput("Q63", label = "Question 63", value = 2),
                 numericInput("Q64", label = "Question 64", value = 0),
-                numericInput("Q65", label = "Question 65", value = 0),
+                numericInput("Q65", label = "Question 65", value = 2),
                 numericInput("Q66", label = "Question 66", value = 0),
                 numericInput("Q67", label = "Question 67", value = 0),
-                numericInput("Q68", label = "Question 68", value = 0),
-                numericInput("Q69", label = "Question 69", value = 0),
+                numericInput("Q68", label = "Question 68", value = ""),
+                numericInput("Q69", label = "Question 69", value = 3),
                 numericInput("Q70", label = "Question 70", value = 0),
                 numericInput("Q71", label = "Question 71", value = 0),
                 numericInput("Q72", label = "Question 72", value = 0),
-                numericInput("Q73", label = "Question 73", value = 0),
-                numericInput("Q74", label = "Question 74", value = 0),
+                numericInput("Q73", label = "Question 73", value = 1),
+                numericInput("Q74", label = "Question 74", value = 3),
                 numericInput("Q75", label = "Question 75", value = 0),
                 numericInput("Q76", label = "Question 76", value = 0),
-                numericInput("Q77", label = "Question 77", value = 0),
-                numericInput("Q78", label = "Question 78", value = 0),
-                numericInput("Q79", label = "Question 79", value = 0),
+                numericInput("Q77", label = "Question 77", value = 3),
+                numericInput("Q78", label = "Question 78", value = 3),
+                numericInput("Q79", label = "Question 79", value = 2),
                 numericInput("Q80", label = "Question 80", value = 0),
-                numericInput("Q81", label = "Question 81", value = 0),
-                numericInput("Q82", label = "Question 82", value = 0),
-                numericInput("Q83", label = "Question 83", value = 0),
+                numericInput("Q81", label = "Question 81", value = 3),
+                numericInput("Q82", label = "Question 82", value = 3),
+                numericInput("Q83", label = "Question 83", value = 2),
                 numericInput("Q84", label = "Question 84", value = 0),
                 numericInput("Q85", label = "Question 85", value = 0),
-                numericInput("Q86", label = "Question 86", value = 0),
-                numericInput("Q87", label = "Question 87", value = 0),
-                numericInput("Q88", label = "Question 88", value = 0),
+                numericInput("Q86", label = "Question 86", value = 2),
+                numericInput("Q87", label = "Question 87", value = 3),
+                numericInput("Q88", label = "Question 88", value = 3),
                 numericInput("Q89", label = "Question 89", value = 0),
                 numericInput("Q90", label = "Question 90", value = 0),
-                numericInput("Q91", label = "Question 91", value = 0),
-                numericInput("Q92", label = "Question 92", value = 0),
+                numericInput("Q91", label = "Question 91", value = 1),
+                numericInput("Q92", label = "Question 92", value = 3),
                 numericInput("Q93", label = "Question 93", value = 0),
-                numericInput("Q94", label = "Question 94", value = 0),
+                numericInput("Q94", label = "Question 94", value = 3),
                 numericInput("Q95", label = "Question 95", value = 0),
                 numericInput("Q96", label = "Question 96", value = 0),
-                numericInput("Q97", label = "Question 97", value = 0),
+                numericInput("Q97", label = "Question 97", value = 3),
                 numericInput("Q98", label = "Question 98", value = 0),
-                numericInput("Q99", label = "Question 99", value = 0),
-                numericInput("Q100", label = "Question 100", value = 0),
+                numericInput("Q99", label = "Question 99", value = 3),
+                numericInput("Q100", label = "Question 100", value = 3),
                 numericInput("Q101", label = "Question 101", value = 0),
                 numericInput("Q102", label = "Question 102", value = 0),
-                numericInput("Q103", label = "Question 103", value = 0),
+                numericInput("Q103", label = "Question 103", value = 3),
                 numericInput("Q104", label = "Question 104", value = 0),
                 numericInput("Q105", label = "Question 105", value = 0),
-                numericInput("Q106", label = "Question 106", value = 0),
-                numericInput("Q107", label = "Question 107", value = 0),
+                numericInput("Q106", label = "Question 106", value = 3),
+                numericInput("Q107", label = "Question 107", value = 3),
                 numericInput("Q108", label = "Question 108", value = 0),
-                numericInput("Q109", label = "Question 109", value = 0),
-                numericInput("Q110", label = "Question 110", value = 0),
-                numericInput("Q111", label = "Question 111", value = 0),
-                numericInput("Q112", label = "Question 112", value = 0),
+                numericInput("Q109", label = "Question 109", value = 1),
+                numericInput("Q110", label = "Question 110", value = 3),
+                numericInput("Q111", label = "Question 111", value = 3),
+                numericInput("Q112", label = "Question 112", value = 3),
                 numericInput("Q113", label = "Question 113", value = 0)
             ),
             
@@ -485,22 +485,35 @@ server <- function(input, output) {
     #Formula is 50 + (10*(Raw Score - Mean)/SD)
     
     #inattention
-    output$IN <- renderPrint(cat(round(50 + 10 * ((sum(input$Q3, input$Q37, input$Q41, input$Q44, input$Q60,
+    output$IN <- renderPrint(cat(ifelse(round(50 + 10 * ((sum(input$Q3, input$Q37, input$Q41, input$Q44, input$Q60,
                                                   input$Q86, input$Q97, input$Q100, input$Q108, input$Q111) - 
                                                   subset(teacher, Age == years(input$dob, input$doe) & 
                                                              Scale == "IN" & NormGrp == input$norms)[[3]]) / 
                                                  subset(teacher, Age == years(input$dob, input$doe) & 
-                                                            Scale == "IN" & NormGrp == input$norms)[[4]]))))
+                                                            Scale == "IN" & NormGrp == input$norms)[[4]])) > 89, "≥90", 
+                                        round(50 + 10 * ((sum(input$Q3, input$Q37, input$Q41, input$Q44, input$Q60,
+                                                              input$Q86, input$Q97, input$Q100, input$Q108, input$Q111) - 
+                                                            subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                     Scale == "IN" & NormGrp == input$norms)[[3]]) / 
+                                                           subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                    Scale == "IN" & NormGrp == input$norms)[[4]])))))
     #hyperactivity/impulsivity
-    output$HY <- renderPrint(cat(round(50 + 10 * ((sum(input$Q1, input$Q2, input$Q4, input$Q7, input$Q9, input$Q13, input$Q17,
+    output$HY <- renderPrint(cat(ifelse(round(50 + 10 * ((sum(input$Q1, input$Q2, input$Q4, input$Q7, input$Q9, input$Q13, input$Q17,
                                                    input$Q24, input$Q26, input$Q29, input$Q32, input$Q39, input$Q50, input$Q76,
                                                    input$Q77, input$Q78, input$Q83, input$Q91) - 
                                                    subset(teacher, Age == years(input$dob, input$doe) & 
                                                               Scale == "HY" & NormGrp == input$norms)[[3]]) / 
                                                   subset(teacher, Age == years(input$dob, input$doe) & 
-                                                             Scale == "HY" & NormGrp == input$norms)[[4]]))))
+                                                             Scale == "HY" & NormGrp == input$norms)[[4]])) > 89, "≥90",
+                                        round(50 + 10 * ((sum(input$Q1, input$Q2, input$Q4, input$Q7, input$Q9, input$Q13, input$Q17,
+                                                              input$Q24, input$Q26, input$Q29, input$Q32, input$Q39, input$Q50, input$Q76,
+                                                              input$Q77, input$Q78, input$Q83, input$Q91) - 
+                                                            subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                     Scale == "HY" & NormGrp == input$norms)[[3]]) / 
+                                                           subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                    Scale == "HY" & NormGrp == input$norms)[[4]])))))
     #learning problems/executive functioning (teacher form only)
-    output$LE <- renderPrint(cat(round(50 + 10 * (sum(input$Q6, input$Q11, input$Q12, input$Q16, input$Q18,
+    output$LE <- renderPrint(cat(ifelse(round(50 + 10 * (sum(input$Q6, input$Q11, input$Q12, input$Q16, input$Q18,
                                                   input$Q20, input$Q25, input$Q45,
                                                   input$Q52, input$Q63, input$Q65, 
                                                   if(input$Q66 == 0) {
@@ -515,15 +528,36 @@ server <- function(input, output) {
                                                   subset(teacher, Age == years(input$dob, input$doe) & 
                                                              Scale == "LE" & NormGrp == input$norms)[[3]]) / 
                                        subset(teacher, Age == years(input$dob, input$doe) & 
-                                                  Scale == "LE" & NormGrp == input$norms)[[4]])))
+                                                  Scale == "LE" & NormGrp == input$norms)[[4]]) > 89, "≥90",
+                                       round(50 + 10 * (sum(input$Q6, input$Q11, input$Q12, input$Q16, input$Q18,
+                                                            input$Q20, input$Q25, input$Q45,
+                                                            input$Q52, input$Q63, input$Q65, 
+                                                            if(input$Q66 == 0) {
+                                                              3
+                                                            } else if(input$Q66 == 1){
+                                                              2
+                                                            } else if(input$Q66 == 2) {
+                                                              1
+                                                            } else {
+                                                              0
+                                                            }, input$Q72, input$Q94, input$Q99, input$Q106) -
+                                                          subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                   Scale == "LE" & NormGrp == input$norms)[[3]]) / 
+                                               subset(teacher, Age == years(input$dob, input$doe) & 
+                                                        Scale == "LE" & NormGrp == input$norms)[[4]]))))
     #learning problems
-    output$LP <- renderPrint(cat(round(50 + 10 * (sum(input$Q12, input$Q45, input$Q52, input$Q63, input$Q65, input$Q72) - 
+    output$LP <- renderPrint(cat(ifelse(round(50 + 10 * (sum(input$Q12, input$Q45, input$Q52, input$Q63, input$Q65, input$Q72) - 
                                                   subset(teacher, Age == years(input$dob, input$doe) & 
                                                              Scale == "LP" & NormGrp == input$norms)[[3]]) / 
                                        subset(teacher, Age == years(input$dob, input$doe) & 
-                                                  Scale == "LP" & NormGrp == input$norms)[[4]])))
+                                                  Scale == "LP" & NormGrp == input$norms)[[4]]) > 89, "≥90",
+                                       round(50 + 10 * (sum(input$Q12, input$Q45, input$Q52, input$Q63, input$Q65, input$Q72) - 
+                                                          subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                   Scale == "LP" & NormGrp == input$norms)[[3]]) / 
+                                               subset(teacher, Age == years(input$dob, input$doe) & 
+                                                        Scale == "LP" & NormGrp == input$norms)[[4]]))))
     #executive functioning
-    output$EF <- renderPrint(cat(round(50 + 10 * (sum(input$Q6, input$Q11, input$Q16, input$Q20, input$Q25, 
+    output$EF <- renderPrint(cat(ifelse(round(50 + 10 * (sum(input$Q6, input$Q11, input$Q16, input$Q20, input$Q25, 
                                                   if(input$Q66 == 0) {
                                                       3
                                                   } else if(input$Q66 == 1){
@@ -536,62 +570,124 @@ server <- function(input, output) {
                                                   subset(teacher, Age == years(input$dob, input$doe) & 
                                                              Scale == "EF" & NormGrp == input$norms)[[3]]) / 
                                        subset(teacher, Age == years(input$dob, input$doe) & 
-                                                  Scale == "EF" & NormGrp == input$norms)[[4]])))
+                                                  Scale == "EF" & NormGrp == input$norms)[[4]]) > 89, "≥90",
+                                       round(50 + 10 * (sum(input$Q6, input$Q11, input$Q16, input$Q20, input$Q25, 
+                                                            if(input$Q66 == 0) {
+                                                              3
+                                                            } else if(input$Q66 == 1){
+                                                              2
+                                                            } else if(input$Q66 == 2) {
+                                                              1
+                                                            } else {
+                                                              0
+                                                            }, input$Q106) - 
+                                                          subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                   Scale == "EF" & NormGrp == input$norms)[[3]]) / 
+                                               subset(teacher, Age == years(input$dob, input$doe) & 
+                                                        Scale == "EF" & NormGrp == input$norms)[[4]]))))
     #defiance/aggression
-    output$AG <- renderPrint(cat(round(50 + 10 * (sum(input$Q8, input$Q10, input$Q35, input$Q38, input$Q40, input$Q43,
+    output$AG <- renderPrint(cat(ifelse(round(50 + 10 * (sum(input$Q8, input$Q10, input$Q35, input$Q38, input$Q40, input$Q43,
                                                   input$Q47, input$Q51,input$Q59, input$Q62, input$Q68, input$Q70,
                                                   input$Q71, input$Q85, input$Q96, input$Q98, input$Q102, input$Q105) -
                                                   subset(teacher, Age == years(input$dob, input$doe) & 
                                                              Scale == "AG" & NormGrp == input$norms)[[3]]) / 
                                        subset(teacher, Age == years(input$dob, input$doe) & 
-                                                  Scale == "AG" & NormGrp == input$norms)[[4]])))
+                                                  Scale == "AG" & NormGrp == input$norms)[[4]]) > 89, "≥90",
+                                       round(50 + 10 * (sum(input$Q8, input$Q10, input$Q35, input$Q38, input$Q40, input$Q43,
+                                                            input$Q47, input$Q51,input$Q59, input$Q62, input$Q68, input$Q70,
+                                                            input$Q71, input$Q85, input$Q96, input$Q98, input$Q102, input$Q105) -
+                                                          subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                   Scale == "AG" & NormGrp == input$norms)[[3]]) / 
+                                               subset(teacher, Age == years(input$dob, input$doe) & 
+                                                        Scale == "AG" & NormGrp == input$norms)[[4]]))))
     #peer relations
-    output$PR <- renderPrint(cat(round(50 + 10 * (sum(input$Q19, input$Q34, input$Q42, if(input$Q74 == 0) {3} 
+    output$PR <- renderPrint(cat(ifelse(round(50 + 10 * (sum(input$Q19, input$Q34, input$Q42, if(input$Q74 == 0) {3} 
                                                   else if(input$Q74 == 1) {2}
                                                   else if(input$Q74 == 2) {1} else {0}, input$Q80, input$Q89, input$Q104) - 
                                                   subset(teacher, Age == years(input$dob, input$doe) & 
                                                              Scale == "PR" & NormGrp == input$norms)[[3]]) / 
                                        subset(teacher, Age == years(input$dob, input$doe) & 
-                                                  Scale == "PR" & NormGrp == input$norms)[[4]])))
+                                                  Scale == "PR" & NormGrp == input$norms)[[4]]) > 89, "≥90",
+                                       round(50 + 10 * (sum(input$Q19, input$Q34, input$Q42, if(input$Q74 == 0) {3} 
+                                                            else if(input$Q74 == 1) {2}
+                                                            else if(input$Q74 == 2) {1} else {0}, input$Q80, input$Q89, input$Q104) - 
+                                                          subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                   Scale == "PR" & NormGrp == input$norms)[[3]]) / 
+                                               subset(teacher, Age == years(input$dob, input$doe) & 
+                                                        Scale == "PR" & NormGrp == input$norms)[[4]]))))
     #conners 3 global index
-    output$GI <- renderPrint(cat(round(50 + 10 * (sum(input$Q7, input$Q13, input$Q22, input$Q25, input$Q46, 
+    output$GI <- renderPrint(cat(ifelse(round(50 + 10 * (sum(input$Q7, input$Q13, input$Q22, input$Q25, input$Q46, 
                                                   input$Q48, input$Q75, input$Q77,
                                                   input$Q84, input$Q100) - 
                                                   subset(teacher, Age == years(input$dob, input$doe) & 
                                                              Scale == "GI" & NormGrp == input$norms)[[3]]) / 
                                        subset(teacher, Age == years(input$dob, input$doe) & 
-                                                  Scale == "GI" & NormGrp == input$norms)[[4]])))
+                                                  Scale == "GI" & NormGrp == input$norms)[[4]]) > 89, "≥90",
+                                       round(50 + 10 * (sum(input$Q7, input$Q13, input$Q22, input$Q25, input$Q46, 
+                                                            input$Q48, input$Q75, input$Q77,
+                                                            input$Q84, input$Q100) - 
+                                                          subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                   Scale == "GI" & NormGrp == input$norms)[[3]]) / 
+                                               subset(teacher, Age == years(input$dob, input$doe) & 
+                                                        Scale == "GI" & NormGrp == input$norms)[[4]]))))
     #dsm-5 inattentive
-    output$AN <- renderPrint(cat(round(50 + 10 * (sum(input$Q23, input$Q37, input$Q57, input$Q60, input$Q69, 
+    output$AN <- renderPrint(cat(ifelse(round(50 + 10 * (sum(input$Q23, input$Q37, input$Q57, input$Q60, input$Q69, 
                                                   input$Q73, input$Q88, input$Q92,
                                                   input$Q103, input$Q111) -
                                                   subset(teacher, Age == years(input$dob, input$doe) & 
                                                              Scale == "AN" & NormGrp == input$norms)[[3]]) / 
                                        subset(teacher, Age == years(input$dob, input$doe) & 
-                                                  Scale == "AN" & NormGrp == input$norms)[[4]])))
+                                                  Scale == "AN" & NormGrp == input$norms)[[4]]) > 89, "≥90",
+                                       round(50 + 10 * (sum(input$Q23, input$Q37, input$Q57, input$Q60, input$Q69, 
+                                                            input$Q73, input$Q88, input$Q92,
+                                                            input$Q103, input$Q111) -
+                                                          subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                   Scale == "AN" & NormGrp == input$norms)[[3]]) / 
+                                               subset(teacher, Age == years(input$dob, input$doe) & 
+                                                        Scale == "AN" & NormGrp == input$norms)[[4]]))))
     #dsm-5 hyperactive-impulsive
-    output$AH <- renderPrint(cat(round (50 + 10 * (sum(input$Q1, input$Q4, input$Q7, input$Q9, input$Q17, input$Q24, 
+    output$AH <- renderPrint(cat(ifelse(round (50 + 10 * (sum(input$Q1, input$Q4, input$Q7, input$Q9, input$Q17, input$Q24, 
                                                    input$Q29, input$Q32,
                                                    input$Q50, input$Q76, input$Q78) -
                                                    subset(teacher, Age == years(input$dob, input$doe) & 
                                                               Scale == "AH" & NormGrp == input$norms)[[3]]) / 
                                         subset(teacher, Age == years(input$dob, input$doe) & 
-                                                   Scale == "AH" & NormGrp == input$norms)[[4]])))
+                                                   Scale == "AH" & NormGrp == input$norms)[[4]]) > 89, "≥90",
+                                        round (50 + 10 * (sum(input$Q1, input$Q4, input$Q7, input$Q9, input$Q17, input$Q24, 
+                                                              input$Q29, input$Q32,
+                                                              input$Q50, input$Q76, input$Q78) -
+                                                            subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                     Scale == "AH" & NormGrp == input$norms)[[3]]) / 
+                                                 subset(teacher, Age == years(input$dob, input$doe) & 
+                                                          Scale == "AH" & NormGrp == input$norms)[[4]]))))
     #dsm-5 conduct disorder
-    output$CD <- renderPrint(cat(round(50 + 10 * (sum(input$Q10, input$Q14, input$Q21, input$Q27, input$Q31, 
+    output$CD <- renderPrint(cat(ifelse(round(50 + 10 * (sum(input$Q10, input$Q14, input$Q21, input$Q27, input$Q31, 
                                                   input$Q33, input$Q35, input$Q40,
                                                   input$Q54, input$Q61, input$Q90, input$Q98, input$Q105) - 
                                                   subset(teacher, Age == years(input$dob, input$doe) & 
                                                              Scale == "CD" & NormGrp == input$norms)[[3]]) / 
                                        subset(teacher, Age == years(input$dob, input$doe) & 
-                                                  Scale == "CD" & NormGrp == input$norms)[[4]])))
+                                                  Scale == "CD" & NormGrp == input$norms)[[4]]) > 89, "≥90",
+                                       round(50 + 10 * (sum(input$Q10, input$Q14, input$Q21, input$Q27, input$Q31, 
+                                                            input$Q33, input$Q35, input$Q40,
+                                                            input$Q54, input$Q61, input$Q90, input$Q98, input$Q105) - 
+                                                          subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                   Scale == "CD" & NormGrp == input$norms)[[3]]) / 
+                                               subset(teacher, Age == years(input$dob, input$doe) & 
+                                                        Scale == "CD" & NormGrp == input$norms)[[4]]))))
     #dsm-5 oppositional defiant disorder
-    output$OD <- renderPrint(cat(round(50 + 10 * (sum(input$Q38, input$Q47, input$Q51, input$Q56, input$Q59, 
+    output$OD <- renderPrint(cat(ifelse(round(50 + 10 * (sum(input$Q38, input$Q47, input$Q51, input$Q56, input$Q59, 
                                                   input$Q62, input$Q64, input$Q71) - 
                                                   subset(teacher, Age == years(input$dob, input$doe) & 
                                                              Scale == "OD" & NormGrp == input$norms)[[3]]) / 
                                        subset(teacher, Age == years(input$dob, input$doe) & 
-                                                  Scale == "OD" & NormGrp == input$norms)[[4]])))
+                                                  Scale == "OD" & NormGrp == input$norms)[[4]]) > 89, "≥90",
+                                       round(50 + 10 * (sum(input$Q38, input$Q47, input$Q51, input$Q56, input$Q59, 
+                                                            input$Q62, input$Q64, input$Q71) - 
+                                                          subset(teacher, Age == years(input$dob, input$doe) & 
+                                                                   Scale == "OD" & NormGrp == input$norms)[[3]]) / 
+                                               subset(teacher, Age == years(input$dob, input$doe) & 
+                                                        Scale == "OD" & NormGrp == input$norms)[[4]]))))
 }
 
 # Run the application 
