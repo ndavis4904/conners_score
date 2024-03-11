@@ -47,7 +47,7 @@ ui <- fluidPage(
     # Sidebar with a demographc input of the examinee 
     sidebarLayout(
         sidebarPanel(
-            dateInput("dob", label = "Student's Date of Birth", format = "m/d/yyyy", value = "7/21/2012"),
+            dateInput("dob", label = "Student's Date of Birth", format = "m/d/yyyy", value = "2012-07-21"),
             
             dateInput("doe", label = "Date of Evaluation", format = "m/d/yyyy"),
             
@@ -185,7 +185,6 @@ ui <- fluidPage(
         tabPanel("Validity Check",
                  
                  h4("Inconsistency Index"),
-                 plotOutput("Differences_graph"),
                  htmlOutput("diff_phrase"),
                  
                  h4("Positive Impression"),
@@ -274,19 +273,16 @@ server <- function(input, output) {
     
     #Functions for data on the validity check tab
     
-    #Creating the graph of critical differences
-    output$Differences_graph <- renderPlot(qplot(c(abs(diff(c(input$Q97, input$Q100))), abs(diff(c(input$Q52, input$Q63))), 
-                                             abs(diff(c(input$Q4, input$Q77))), abs(diff(c(input$Q7, input$Q13))),
-                                             abs(diff(c(input$Q26, input$Q29))), abs(diff(c(input$Q98, input$Q105))),
-                                             abs(diff(c(input$Q25, input$Q57))), abs(diff(c(input$Q23, input$Q44))),
-                                             abs(diff(c(input$Q34, input$Q89))), abs(diff(c(input$Q47, input$Q71))))) +
-                                         geom_bar(fill = "skyblue", color = "black", width = 1) +
-                                         theme(panel.background = element_blank()) +
-                                         labs(x = "") +
-                                         geom_hline(yintercept = 2, col = "firebrick", linewidth = 1.5) +
-                                         scale_x_continuous(breaks = c(0, 1, 2, 3)))
-    
-    output$diff_phrase <- renderText(paste0("Note: If the total number of differences of 2s and 3s (seen above in the graph) are greater than 2,",
+    output$diff_phrase <- renderText(paste0("If the total number of differences of 2s and 3s (which is ", table(c(abs(diff(c(input$Q97, input$Q100))), abs(diff(c(input$Q52, input$Q63))), 
+                                                                                                                        abs(diff(c(input$Q4, input$Q77))), abs(diff(c(input$Q7, input$Q13))),
+                                                                                                                        abs(diff(c(input$Q26, input$Q29))), abs(diff(c(input$Q98, input$Q105))),
+                                                                                                                        abs(diff(c(input$Q25, input$Q57))), abs(diff(c(input$Q23, input$Q44))),
+                                                                                                                        abs(diff(c(input$Q34, input$Q89))), abs(diff(c(input$Q47, input$Q71)))))[["2"]] + 
+                                              table(c(abs(diff(c(input$Q97, input$Q100))), abs(diff(c(input$Q52, input$Q63))), 
+                                                      abs(diff(c(input$Q4, input$Q77))), abs(diff(c(input$Q7, input$Q13))),
+                                                      abs(diff(c(input$Q26, input$Q29))), abs(diff(c(input$Q98, input$Q105))),
+                                                      abs(diff(c(input$Q25, input$Q57))), abs(diff(c(input$Q23, input$Q44))),
+                                                      abs(diff(c(input$Q34, input$Q89))), abs(diff(c(input$Q47, input$Q71)))))[["3"]], ") are greater than 2,",
                                             "<b>"," AND ", "</b>", sum(c(abs(diff(c(input$Q97, input$Q100))), abs(diff(c(input$Q52, input$Q63))), 
                                                                   abs(diff(c(input$Q4, input$Q77))), abs(diff(c(input$Q7, input$Q13))),
                                                                   abs(diff(c(input$Q26, input$Q29))), abs(diff(c(input$Q98, input$Q105))),
