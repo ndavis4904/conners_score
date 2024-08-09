@@ -1,0 +1,12 @@
+name: ParentInput
+title: ParentInput
+username: nicholas4904
+account: nicholas4904
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12425480
+bundleId: 8961753
+url: https://nicholas4904.shinyapps.io/ParentInput/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

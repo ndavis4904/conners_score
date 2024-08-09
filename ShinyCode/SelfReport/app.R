@@ -1,4 +1,4 @@
-
+#Self-Report Form
 library(shiny)
 library(ggplot2)
 
@@ -169,7 +169,6 @@ ui <- fluidPage(
                 tabPanel("Validity Check",
                          
                          h4("Inconsistency Index"),
-                         plotOutput("Differences_graph"),
                          htmlOutput("diff_phrase"),
                          
                          h4("Positive Impression"),
@@ -249,19 +248,19 @@ server <- function(input, output) {
     
     #Functions for data on the validity check tab
     
-    #Creating the graph of critical differences
-    output$Differences_graph <- renderPlot(qplot(c(abs(diff(c(input$Q73, input$Q85))), abs(diff(c(input$Q50, input$Q60))), 
-                                                   abs(diff(c(input$Q81, input$Q79))), abs(diff(c(input$Q46, input$Q90))),
-                                                   abs(diff(c(input$Q17, input$Q30))), abs(diff(c(input$Q56, input$Q70))),
-                                                   abs(diff(c(input$Q42, input$Q63))), abs(diff(c(input$Q69, input$Q83))),
-                                                   abs(diff(c(input$Q43, input$Q61))), abs(diff(c(input$Q25, input$Q38))))) +
-                                               geom_bar(fill = "skyblue", color = "black", width = 1) +
-                                               theme(panel.background = element_blank()) +
-                                               labs(x = "") +
-                                               geom_hline(yintercept = 2, col = "firebrick", linewidth = 1.5) +
-                                               scale_x_continuous(breaks = c(0, 1, 2, 3)))
-    
-    output$diff_phrase <- renderText(paste0("Note: If the total number of differences of 2s and 3s (seen above in the graph) are greater than 2,",
+    #Counting comparisons for the inconsistency index
+    output$diff_phrase <- renderText(paste0("Note: If the total number of differences of 2s and 3s (which is ", 
+                                            sum(grepl(2, c(abs(diff(c(input$Q73, input$Q85))), abs(diff(c(input$Q50, input$Q60))), 
+                                                           abs(diff(c(input$Q81, input$Q79))), abs(diff(c(input$Q46, input$Q90))),
+                                                           abs(diff(c(input$Q17, input$Q30))), abs(diff(c(input$Q56, input$Q70))),
+                                                           abs(diff(c(input$Q42, input$Q63))), abs(diff(c(input$Q69, input$Q83))),
+                                                           abs(diff(c(input$Q43, input$Q61))), abs(diff(c(input$Q25, input$Q38)))))) +
+                                            sum(grepl(3, c(abs(diff(c(input$Q73, input$Q85))), abs(diff(c(input$Q50, input$Q60))), 
+                                                           abs(diff(c(input$Q81, input$Q79))), abs(diff(c(input$Q46, input$Q90))),
+                                                           abs(diff(c(input$Q17, input$Q30))), abs(diff(c(input$Q56, input$Q70))),
+                                                           abs(diff(c(input$Q42, input$Q63))), abs(diff(c(input$Q69, input$Q83))),
+                                                           abs(diff(c(input$Q43, input$Q61))), abs(diff(c(input$Q25, input$Q38))))))
+                                            ,") are greater than 2,",
                                             "<b>"," AND ", "</b>", sum(c(abs(diff(c(input$Q73, input$Q85))), abs(diff(c(input$Q50, input$Q60))), 
                                                                          abs(diff(c(input$Q81, input$Q79))), abs(diff(c(input$Q46, input$Q90))),
                                                                          abs(diff(c(input$Q17, input$Q30))), abs(diff(c(input$Q56, input$Q70))),

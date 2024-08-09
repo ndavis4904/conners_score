@@ -1,4 +1,4 @@
-
+#Teacher Form
 library(shiny)
 library(ggplot2)
 
@@ -273,16 +273,19 @@ server <- function(input, output) {
     
     #Functions for data on the validity check tab
     
-    output$diff_phrase <- renderText(paste0("If the total number of differences of 2s and 3s (which is ", table(c(abs(diff(c(input$Q97, input$Q100))), abs(diff(c(input$Q52, input$Q63))), 
-                                                                                                                        abs(diff(c(input$Q4, input$Q77))), abs(diff(c(input$Q7, input$Q13))),
-                                                                                                                        abs(diff(c(input$Q26, input$Q29))), abs(diff(c(input$Q98, input$Q105))),
-                                                                                                                        abs(diff(c(input$Q25, input$Q57))), abs(diff(c(input$Q23, input$Q44))),
-                                                                                                                        abs(diff(c(input$Q34, input$Q89))), abs(diff(c(input$Q47, input$Q71)))))[["2"]] + 
-                                              table(c(abs(diff(c(input$Q97, input$Q100))), abs(diff(c(input$Q52, input$Q63))), 
-                                                      abs(diff(c(input$Q4, input$Q77))), abs(diff(c(input$Q7, input$Q13))),
-                                                      abs(diff(c(input$Q26, input$Q29))), abs(diff(c(input$Q98, input$Q105))),
-                                                      abs(diff(c(input$Q25, input$Q57))), abs(diff(c(input$Q23, input$Q44))),
-                                                      abs(diff(c(input$Q34, input$Q89))), abs(diff(c(input$Q47, input$Q71)))))[["3"]], ") are greater than 2,",
+    #Counting comparisons for the inconsistency index
+    output$diff_phrase <- renderText(paste0("If the total number of differences of 2s and 3s (which is ",
+                                            sum(grepl(2, c(abs(diff(c(input$Q97, input$Q100))), abs(diff(c(input$Q52, input$Q63))), 
+                                                           abs(diff(c(input$Q4, input$Q77))), abs(diff(c(input$Q7, input$Q13))),
+                                                           abs(diff(c(input$Q26, input$Q29))), abs(diff(c(input$Q98, input$Q105))),
+                                                           abs(diff(c(input$Q25, input$Q57))), abs(diff(c(input$Q23, input$Q44))),
+                                                           abs(diff(c(input$Q34, input$Q89))), abs(diff(c(input$Q47, input$Q71)))))) +
+                                            sum(grepl(3, c(abs(diff(c(input$Q97, input$Q100))), abs(diff(c(input$Q52, input$Q63))), 
+                                                           abs(diff(c(input$Q4, input$Q77))), abs(diff(c(input$Q7, input$Q13))),
+                                                           abs(diff(c(input$Q26, input$Q29))), abs(diff(c(input$Q98, input$Q105))),
+                                                           abs(diff(c(input$Q25, input$Q57))), abs(diff(c(input$Q23, input$Q44))),
+                                                           abs(diff(c(input$Q34, input$Q89))), abs(diff(c(input$Q47, input$Q71)))))), 
+                                            ") are greater than 2,",
                                             "<b>"," AND ", "</b>", sum(c(abs(diff(c(input$Q97, input$Q100))), abs(diff(c(input$Q52, input$Q63))), 
                                                                   abs(diff(c(input$Q4, input$Q77))), abs(diff(c(input$Q7, input$Q13))),
                                                                   abs(diff(c(input$Q26, input$Q29))), abs(diff(c(input$Q98, input$Q105))),

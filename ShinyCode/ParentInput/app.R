@@ -1,4 +1,4 @@
-
+#Parent Form
 library(shiny)
 library(ggplot2)
 
@@ -180,7 +180,6 @@ ui <- fluidPage(
                 tabPanel("Validity Check",
                          
                          h4("Inconsistency Index"),
-                         plotOutput("Differences_graph"),
                          htmlOutput("diff_phrase"),
                          
                          h4("Positive Impression"),
@@ -266,25 +265,26 @@ server <- function(input, output) {
     
     #Functions for data on the validity check tab
     
-    #Creating the graph of critical differences
-    output$Differences_graph <- renderPlot(qplot(c(abs(diff(c(input$Q44, input$Q67))), abs(diff(c(input$Q12, input$Q23))), 
-                                                   abs(diff(c(input$Q36, input$Q60))), abs(diff(c(input$Q14, input$Q81))),
-                                                   abs(diff(c(input$Q19, input$Q98))), abs(diff(c(input$Q45, input$Q99))),
-                                                   abs(diff(c(input$Q94, input$Q102))), abs(diff(c(input$Q75, input$Q79))),
-                                                   abs(diff(c(input$Q13, input$Q92))), abs(diff(c(input$Q39, input$Q83))))) +
-                                               geom_bar(fill = "skyblue", color = "black", width = 1) +
-                                               theme(panel.background = element_blank()) +
-                                               labs(x = "") +
-                                               geom_hline(yintercept = 2, col = "firebrick", linewidth = 1.5) +
-                                               scale_x_continuous(breaks = c(0, 1, 2, 3)))
-    
-    output$diff_phrase <- renderText(paste0("Note: If the total number of differences of 2s and 3s (seen above in the graph) are greater than 2,",
+    #Counting comparisons for the inconsistency index
+    output$diff_phrase <- renderText(paste0("Note: If the total number of differences of 2s and 3s (which is ",
+                                            sum(grepl(2, c(abs(diff(c(input$Q44, input$Q67))), abs(diff(c(input$Q12, input$Q23))), 
+                                                           abs(diff(c(input$Q36, input$Q60))), abs(diff(c(input$Q14, input$Q81))),
+                                                           abs(diff(c(input$Q19, input$Q98))), abs(diff(c(input$Q45, input$Q99))),
+                                                           abs(diff(c(input$Q94, input$Q102))), abs(diff(c(input$Q75, input$Q79))),
+                                                           abs(diff(c(input$Q13, input$Q92))), abs(diff(c(input$Q39, input$Q83)))))) +
+                                            sum(grepl(3, c(abs(diff(c(input$Q44, input$Q67))), abs(diff(c(input$Q12, input$Q23))), 
+                                                           abs(diff(c(input$Q36, input$Q60))), abs(diff(c(input$Q14, input$Q81))),
+                                                           abs(diff(c(input$Q19, input$Q98))), abs(diff(c(input$Q45, input$Q99))),
+                                                           abs(diff(c(input$Q94, input$Q102))), abs(diff(c(input$Q75, input$Q79))),
+                                                           abs(diff(c(input$Q13, input$Q92))), abs(diff(c(input$Q39, input$Q83))))))
+                                            ,") are greater than 2,",
                                             "<b>"," AND ", "</b>", sum(c(abs(diff(c(input$Q44, input$Q67))), abs(diff(c(input$Q12, input$Q23))), 
                                                                          abs(diff(c(input$Q36, input$Q60))), abs(diff(c(input$Q14, input$Q81))),
                                                                          abs(diff(c(input$Q19, input$Q98))), abs(diff(c(input$Q45, input$Q99))),
                                                                          abs(diff(c(input$Q94, input$Q102))), abs(diff(c(input$Q75, input$Q79))),
                                                                          abs(diff(c(input$Q13, input$Q92))), abs(diff(c(input$Q39, input$Q83))))),
                                             " is greater than 7, there may be a question of consistency in responses."))
+    
     
     #Calculating positive response style
     output$PI_1 <- renderText(paste0("Total Positive Impressions is ", sum(ifelse(input$Q31 == 0, 1, 0),
