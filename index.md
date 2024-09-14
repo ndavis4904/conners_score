@@ -20,7 +20,7 @@ use-site-title: true
 ### Scoring Forms
 
 ##### &ensp; &ensp; [Teacher Form](https://nicholas4904.shinyapps.io/TeacherInput/){:target="_blank" rel="noopener"}
-##### &ensp; &ensp; [Parent Form](https://nicholas4904.shinyapps.io/Parent_Input/){:target="_blank" rel="noopener"}
-##### &ensp; &ensp; [Self-Report Form](https://nicholas4904.shinyapps.io/SelfReport_Input/){:target="_blank" rel="noopener"}
+##### &ensp; &ensp; [Parent Form](https://nicholas4904.shinyapps.io/ParentInput/){:target="_blank" rel="noopener"}
+##### &ensp; &ensp; [Self-Report Form](https://nicholas4904.shinyapps.io/SelfReport/){:target="_blank" rel="noopener"}
 
 
