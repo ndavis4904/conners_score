@@ -266,7 +266,7 @@ server <- function(input, output) {
     #Functions for data on the validity check tab
     
     #Counting comparisons for the inconsistency index
-    output$diff_phrase <- renderText(paste0("Note: If the total number of differences of 2s and 3s (which is ",
+    output$diff_phrase <- renderText(paste0("If the total number of differences of 2s and 3s (which is ",
                                             sum(grepl(2, c(abs(diff(c(input$Q44, input$Q67))), abs(diff(c(input$Q12, input$Q23))), 
                                                            abs(diff(c(input$Q36, input$Q60))), abs(diff(c(input$Q14, input$Q81))),
                                                            abs(diff(c(input$Q19, input$Q98))), abs(diff(c(input$Q45, input$Q99))),

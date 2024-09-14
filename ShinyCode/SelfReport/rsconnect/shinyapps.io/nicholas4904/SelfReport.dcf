@@ -1,12 +1,12 @@
-name: ParentInput
-title: ParentInput
+name: SelfReport
+title: SelfReport
 username: nicholas4904
 account: nicholas4904
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 12425480
-bundleId: 8965796
-url: https://nicholas4904.shinyapps.io/ParentInput/
+appId: 12430838
+bundleId: 8965790
+url: https://nicholas4904.shinyapps.io/SelfReport/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
